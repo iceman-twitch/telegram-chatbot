@@ -1,0 +1,17 @@
+# Python Telegram Bot API
+python-telegram-bot==20.7
+
+# Environment variable management
+python-dotenv==1.0.0
+
+# HTTP requests (if needed for additional features)
+requests==2.31.0
+
+# Async support
+aiohttp==3.9.1
+
+# Image processing
+Pillow==10.1.0
+
+# Create executable
+pyinstaller==6.3.0
