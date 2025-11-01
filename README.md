@@ -16,13 +16,42 @@ env\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 3. Configure Bot Token
-1. Copy `.env.example` to `.env`
-2. Get your bot token from [@BotFather](https://t.me/BotFather) on Telegram
-3. Add your token to the `.env` file:
-   ```
-   BOT_TOKEN=your_actual_bot_token_here
-   ```
+### 3. Get Your Telegram Bot Token
+
+#### Prerequisites
+You need a Telegram account. Install Telegram on your phone or computer and create an account with your phone number.
+
+#### Steps to Get Your Bot Token:
+
+1. **Open Telegram** and search for **@BotFather** (official bot with blue checkmark ✓)
+   - Or visit directly: https://t.me/BotFather
+
+2. **Create Your Bot**
+   - Start chat with BotFather and click **"START"**
+   - Send command: `/newbot`
+   - Provide a **bot name** (display name, can have spaces)
+     - Example: "My Awesome Bot"
+   - Provide a **bot username** (must be unique and end with 'bot')
+     - Example: "my_awesome_bot"
+
+3. **Get Your Token**
+   - BotFather will send you a message with your **Bot Token**
+   - Format: `123456789:ABCdefGHIjklMNOpqrsTUVwxyz`
+   - ⚠️ **Keep this token SECRET!** Anyone with it can control your bot
+
+4. **Configure Your Bot**
+   - Copy `.env.example` to `.env`
+   - Open `.env` and paste your token:
+     ```
+     BOT_TOKEN=123456789:ABCdefGHIjklMNOpqrsTUVwxyz
+     ```
+
+#### Optional: Customize Your Bot with BotFather
+- `/setdescription` - Set bot description
+- `/setabouttext` - Set "About" text  
+- `/setuserpic` - Set bot profile picture
+- `/setcommands` - Set command list shown to users
+- `/revoke` - Generate new token if old one is exposed
 
 ### 4. Run the Bot
 Use the test script which automatically activates the environment, runs the bot, and deactivates after:
